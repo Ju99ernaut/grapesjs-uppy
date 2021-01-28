@@ -28,7 +28,7 @@ export default (editor, opts = {}) => {
                 autoProceed: false,
                 restrictions: {
                     maxFileSize: 1000000,
-                    maxNumberOfFiles: 3,
+                    maxNumberOfFiles: 10,
                     minNumberOfFiles: 1,
                     allowedFileTypes: ['image/*', 'video/*']
                 }
@@ -37,7 +37,7 @@ export default (editor, opts = {}) => {
             // Uppy dashboard options
             dashboardOpts: {
                 showProgressDetails: true,
-                note: 'Images and video only, 1–3 files, up to 1 MB',
+                note: 'Images and video only, 1–10 files, up to 1 MB',
                 height: 470,
                 metaFields: [
                     { id: 'name', name: 'Name', placeholder: 'file name' },
