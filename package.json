@@ -1,6 +1,6 @@
 {
     "name": "grapesjs-uppy",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Grapesjs Uppy",
     "main": "dist/grapesjs-uppy.min.js",
     "repository": {
