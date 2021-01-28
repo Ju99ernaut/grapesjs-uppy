@@ -46,6 +46,7 @@ body, html {
 |-|-|-
 | `btnEl` | Custom button element which triggers Uppy modal | ` ` |
 | `btnText` | Text for the button in case the custom one is not provided | `Add images` |
+| `theme` | Uppy's filepicker theme | `dark` |
 | `uppyOpts` | Uppy's options | `{...}` |
 | `dashboardOpts` | Uppy's dashboard options | `{...}` |
 | `companionUrl` | Uppy companion url | `https://companion.uppy.io` |
