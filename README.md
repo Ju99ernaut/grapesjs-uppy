@@ -2,6 +2,8 @@
 
 Uppy file uploader for `grapesjs`
 
+![screenshot](screenshot.png)
+
 [DEMO](##)
 
 ### HTML
