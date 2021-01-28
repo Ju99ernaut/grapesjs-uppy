@@ -1,0 +1,39 @@
+{
+    "name": "grapesjs-uppy",
+    "version": "1.0.1",
+    "description": "Grapesjs Uppy",
+    "main": "dist/grapesjs-uppy.min.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ju99ernaut/grapesjs-uppy.git"
+    },
+    "scripts": {
+        "start": "grapesjs-cli serve",
+        "build": "grapesjs-cli build",
+        "build:css": "node-sass src/style.scss dist/grapesjs-uppy.min.css --output-style compressed",
+        "bump": "npm version patch -m 'Bump v%s'"
+    },
+    "keywords": [
+        "grapesjs",
+        "plugin"
+    ],
+    "devDependencies": {
+        "grapesjs-cli": "^1.0.13",
+        "node-sass": "^5.0.0"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@uppy/core": "^1.15.0",
+        "@uppy/dashboard": "^1.14.0",
+        "@uppy/dropbox": "^1.4.20",
+        "@uppy/facebook": "^1.1.20",
+        "@uppy/google-drive": "^1.5.20",
+        "@uppy/instagram": "^1.4.20",
+        "@uppy/onedrive": "^1.1.20",
+        "@uppy/screen-capture": "^1.0.11",
+        "@uppy/tus": "^1.8.2",
+        "@uppy/unsplash": "^0.1.4",
+        "@uppy/webcam": "^1.8.2"
+    },
+    "author": "Brendon Ngirazi"
+}
