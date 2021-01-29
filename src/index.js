@@ -27,17 +27,17 @@ export default (editor, opts = {}) => {
             uppyOpts: {
                 autoProceed: false,
                 restrictions: {
-                    maxFileSize: 1000000,
+                    maxFileSize: 2000000,
                     maxNumberOfFiles: 10,
                     minNumberOfFiles: 1,
-                    allowedFileTypes: ['image/*', 'video/*']
+                    allowedFileTypes: ['image/*']
                 }
             },
 
             // Uppy dashboard options
             dashboardOpts: {
                 showProgressDetails: true,
-                note: 'Images and video only, 1–10 files, up to 1 MB',
+                note: 'Images only, 1–10 files, up to 2 MB',
                 height: 470,
                 metaFields: [
                     { id: 'name', name: 'Name', placeholder: 'file name' },
@@ -128,8 +128,12 @@ export default (editor, opts = {}) => {
      */
     const addAssets = (files) => {
         const urls = files.map((file) => {
-            file.src = file.uploadURL;
-            return file;
+            return {
+                id: file.id,
+                name: file.meta.name,
+                caption: file.meta.caption || '',
+                src: file.uploadURL
+            };
         });
         return editor.AssetManager.add(urls);
     };
