@@ -1,9 +1,10 @@
 # Grapesjs Uppy
 
-Uppy file uploader for `grapesjs`
+Uppy file uploader for `grapesjs`.`WIP`
 
 > Add [companion](https://uppy.io/docs/companion) to use other image sources other than local. At the moment only [tus](https://github.com/tus/tusd) is supported for file uploads
 
+Screenshot:
 ![screenshot](screenshot.png)
 
 [DEMO](##)
