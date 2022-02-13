@@ -57,6 +57,14 @@ body, html {
 | `endpoint` | Tus endpoint url | `https://tusd.tusdemo.net/files/` |
 | `onComplete` | On complete upload callback | `console.log('successful files:', assets)` |
 | `onFailed` | On failed upload callback | `console.log('failed files:', assets)` |
+| `googledrive` | Use plugin | `false` |
+| `dropbox` | Use plugin | `false` |
+| `instagram` | Use plugin | `false` |
+| `facebook` | Use plugin | `false` |
+| `onedrive` | Use plugin | `false` |
+| `unsplash` | Use plugin | `false` |
+| `webcam` | Use plugin | `true` |
+| `screencapture` | Use plugin | `true` |
 
 
 

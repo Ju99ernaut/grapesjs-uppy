@@ -65,6 +65,16 @@ export default (editor, opts = {}) => {
             onFailed(assets) {
                 console.log('failed files:', assets);
             },
+
+            // Set plugins
+            googledrive: false,
+            dropbox: false,
+            instagram: false,
+            facebook: false,
+            onedrive: false,
+            unsplash: false,
+            webcam: true,
+            screencapture: true,
         },
         ...opts
     };
@@ -95,22 +105,23 @@ export default (editor, opts = {}) => {
 
         if (!uppy) {
             uppy = new Uppy({
-                    ...uppyOpts
-                })
+                ...uppyOpts
+            })
                 .use(Dashboard, {
                     theme: options.theme,
                     trigger: btnEl.get(0),
                     ...dashboardOpts
                 })
-                .use(GoogleDrive, { target: Dashboard, companionUrl })
-                .use(Dropbox, { target: Dashboard, companionUrl })
-                .use(Instagram, { target: Dashboard, companionUrl })
-                .use(Facebook, { target: Dashboard, companionUrl })
-                .use(OneDrive, { target: Dashboard, companionUrl })
-                .use(Unsplash, { target: Dashboard, companionUrl })
-                .use(Webcam, { target: Dashboard })
-                .use(ScreenCapture, { target: Dashboard })
                 .use(Tus, { endpoint });
+
+            if (options.googledrive) uppy.use(GoogleDrive, { target: Dashboard, companionUrl });
+            if (options.dropbox) uppy.use(Dropbox, { target: Dashboard, companionUrl });
+            if (options.instagram) uppy.use(Instagram, { target: Dashboard, companionUrl });
+            if (options.facebook) uppy.use(Facebook, { target: Dashboard, companionUrl });
+            if (options.onedrive) uppy.use(OneDrive, { target: Dashboard, companionUrl });
+            if (options.unsplash) uppy.use(Unsplash, { target: Dashboard, companionUrl });
+            if (options.webcam) uppy.use(Webcam, { target: Dashboard });
+            if (options.screencapture) uppy.use(ScreenCapture, { target: Dashboard });
 
             uppy.on('complete', result => {
                 addAssets(result.successful);
