@@ -1,6 +1,6 @@
 {
     "name": "grapesjs-uppy",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Grapesjs Uppy",
     "main": "dist/grapesjs-uppy.min.js",
     "repository": {
@@ -18,22 +18,22 @@
         "plugin"
     ],
     "devDependencies": {
-        "grapesjs-cli": "^1.0.13",
+        "grapesjs-cli": "^1.0.15",
         "node-sass": "^5.0.0"
     },
     "license": "MIT",
     "dependencies": {
-        "@uppy/core": "^1.15.0",
-        "@uppy/dashboard": "^1.14.0",
-        "@uppy/dropbox": "^1.4.20",
-        "@uppy/facebook": "^1.1.20",
-        "@uppy/google-drive": "^1.5.20",
-        "@uppy/instagram": "^1.4.20",
-        "@uppy/onedrive": "^1.1.20",
-        "@uppy/screen-capture": "^1.0.11",
-        "@uppy/tus": "^1.8.2",
-        "@uppy/unsplash": "^0.1.4",
-        "@uppy/webcam": "^1.8.2"
+        "@uppy/core": "^1.20.1",
+        "@uppy/dashboard": "^1.21.1",
+        "@uppy/dropbox": "^1.5.2",
+        "@uppy/facebook": "^1.2.2",
+        "@uppy/google-drive": "^1.7.2",
+        "@uppy/instagram": "^1.5.2",
+        "@uppy/onedrive": "^1.2.2",
+        "@uppy/screen-capture": "^1.1.0",
+        "@uppy/tus": "^1.9.2",
+        "@uppy/unsplash": "^0.1.13",
+        "@uppy/webcam": "^1.8.13"
     },
     "author": "Brendon Ngirazi"
 }
