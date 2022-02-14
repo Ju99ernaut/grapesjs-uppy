@@ -13,7 +13,7 @@ Screenshot:
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
 <script src="https://unpkg.com/grapesjs"></script>
-<link href="https://unpkg.com/grapesjs-uppy/dist/grapes-uppy.min.css" rel="stylesheet">
+<link href="https://unpkg.com/grapesjs-uppy/dist/grapesjs-uppy.min.css" rel="stylesheet">
 <script src="https://unpkg.com/grapesjs-uppy"></script>
 
 <div id="gjs"></div>
@@ -85,7 +85,7 @@ body, html {
 Directly in the browser
 ```html
 <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/>
-<link href="https://unpkg.com/grapesjs-uppy/dist/grapes-uppy.min.css" rel="stylesheet">
+<link href="https://unpkg.com/grapesjs-uppy/dist/grapesjs-uppy.min.css" rel="stylesheet">
 <script src="https://unpkg.com/grapesjs"></script>
 <script src="path/to/grapesjs-uppy.min.js"></script>
 
@@ -108,7 +108,7 @@ Modern javascript
 import grapesjs from 'grapesjs';
 import plugin from 'grapesjs-uppy';
 import 'grapesjs/dist/css/grapes.min.css';
-import 'grapesjs-uppy/dist/grapes-uppy.min.css';
+import 'grapesjs-uppy/dist/grapesjs-uppy.min.css';
 
 const editor = grapesjs.init({
   container : '#gjs',
