@@ -141,8 +141,9 @@ export default (editor, opts = {}) => {
         const urls = files.map((file) => {
             return {
                 id: file.id,
-                name: file.meta.name,
+                name: file.name,
                 caption: file.meta.caption || '',
+                size: file.size,
                 src: file.uploadURL
             };
         });
